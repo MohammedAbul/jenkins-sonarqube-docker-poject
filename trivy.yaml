@@ -1,0 +1,14 @@
+timeout: 10m
+format: json
+dependency-tree: true
+list-all-pkgs: true
+exit-code: 1
+severity:
+  - HIGH
+  - CRITICAL
+scan:
+  security-checks:
+    - vuln
+  ignore-unfixed: true
+db:
+  skip-update: false
